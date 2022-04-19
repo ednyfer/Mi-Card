@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: #bdb8db;
+        }
+        .card{
+            width: 400px;
+            height: 600px;
+            background: #8f496a;
+            border-radius: 20px;
+            border: 2px solid black;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        img{
+            width: 100px;
+            border: 2px solid black;
+        }
+        .card img:nth-child(1) {
+            width: 100%;
+            height: 250px;
+        }
+        .card img:nth-child(2) {
+            border-radius: 50%;
+            position: relative;
+            top: -5rem;
+            right: -9.1rem;
+        }
+        p{
+            font-family: fantasy;
+            color:#181626;
+            text-align: center;
+            margin: 0;
+        }
+        .name{
+            font-size:x-large;
+            margin-top: -5rem;
+            font-weight:bold;
+        }   
+        .yo{
+            font-size: x-large;
+        }
+        .socialmedia{
+            font-family: fantasy;
+            color: #181626;
+            font-size: large;
+            display: flex;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 3rem;
+        }
+        .socialmedia div{
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .lugar::before{
+            content: "📍";
+        }
+        .email::before{
+            content: "📩";
+        }
+        .buttons div:nth-child(1){
+            border-right: 1px solid rgba(0, 0, 0, 0.425);
+        }
+        .buttons{
+            border: 1px solid rgba(0, 0, 0, 0.425);
+            margin-top: 1rem;
+            background-color: #8f496a;
+            height: 5rem;
+            width: 100%;
+            display: flex;
+            font-size: x-large;
+        }
+        .buttons div{
+            flex-direction: column;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .follow button{
+            background: none;
+            width: 100%;
+            height: 3rem;
+            font-family: fantasy;
+            font-size: x-large;
+            color: rgba(255, 255, 255, 0.562);
+            cursor: pointer;
+            border:0;
+        }
+        .follow button:focus-visible{
+            outline: dotted;
+            background: lightgray;
+        }
+        .follow button:active{
+            background:#181626;
+        }
+        
+    </style>
+</head>
+<body>
+    <section>
+    <div class="card">
+        <img class="fondo" src="https://i.pinimg.com/564x/67/e9/69/67e9696f3e4985dffa02d46a8d6cab60.jpg" alt="fondo">
+        <img class="me" src="https://i.pinimg.com/564x/f4/89/a8/f489a8420798163977f1b2dcc312230a.jpg" alt="me">
+        <p class="name">Edny Mariana Fernandez Chinome</p>
+        <div class="yo">
+        <p class="rol">Ingeniería de Sistemas</p>
+        <p class="uni">UIS</p>
+        </div>
+    <div class="socialmedia">
+        <div class="lugar">Colombia</div>
+        <div class="email">Send email</div>
+    </div>
+    <section>
+        <div class="buttons">
+            <div>
+            <p>83</p>
+            <p>Followers</p>
+            </div>
+            <div>
+            <p>2000</p>
+            <p>Following</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="follow">
+            <button onclick="location.href='https:www.instagram.com/edny__fernandez/'">Follow</button>
+        </div>
+    </section>
+    </div>
+    </section>
+</body>
+</html>
